@@ -3,11 +3,11 @@
 - name: Update Arch Linux Servers - Starting Deploy
   hosts: all
   tasks:
-    - name: PACMAN | Update System
-      community.general.pacman:
-        upgrade: true
-        update_cache: true
-      when: ansible_distribution == "Archlinux"
+    # - name: PACMAN | Update System
+    #   community.general.pacman:
+    #     upgrade: true
+    #     update_cache: true
+    #   when: ansible_distribution == "Archlinux"
 
     - name: APT | Update System
       ansible.builtin.apt:
